@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+
+			<title>Improving the User Interface</title>
+
+
+			<script src = "../javascript.js"></script>
+		</head>
+
+
+		<body>
+			<div class = "nav">
+					<nav>
+						<div class = "dropdown">
+							<a class = "left_logo" onclick="dropdown(dropOn)">Topics <span class = "arrow-down"></span></a>
+								<div class = "topicsHoverReveal">
+									<ul class = "topicsUnorderedList">
+										<li><a class = "navDrop" href = "../swift-basics/an-introduction.html">Unit 1 - Swift Basics</a></li>
+										<li><a class = "navDrop" href = "../types-and-operators/introduction-to-types.html">Unit 2 - Types & Operators</a></li>
+										<li><a class = "navDrop" href = "../collections-and-control-flow/arrays.html">Unit 3 - Collections & Control Flow</a></li>
+										<li><a class = "navDrop" href = "../functions/intro-to-functions.html">Unit 4 - Functions</a></li>
+										<li><a class = "navDrop" href = "../object-oriented-programming/intro-to-structs.html">Unit 5 - Object Oriented Programming</a></li>
+										<li><a class = "navDrop" href = "intro-to-the-project.html">Unit 6 - Building Our First iPhone App</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class = "hambuger-icon-dropdown">
+							<a class = "hamburger-icon" onclick = "showHamburger()"></a>
+							<a class = "hamburger-icon-exit" onclick = "showHamburger()"></a>
+							<div class = "hamburger-menu">
+								<ul>
+									<li class = "hamburger-drop"><a href = "../index.html">Home</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "../topics.html">Curriculum</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "../swift-basics/an-introduction.html">Start Now</a><div class = "hamburger-divier"></div></li>
+						
+									<li class = "hamburger-drop"><a href = "../mission.html">Mission</a></li>
+								</ul>
+							</div>
+						</div>
+						<a class = "top_logo" href = "../index.html"></a>
+						<a class = "right_logo">Contact us</a>
+						<div class = "separator"></div>
+					</nav>
+				</div>
+
+
+				<div class = "overlay" style = "height: 125%;"></div>
+
+				<div class = "contactsPage">
+					<h1 class = "borderTitle">Need some help?</h1>
+					<p class = "borderDescription">If you're ever in doubt or need some help, shoot us a question at <a class = "borderLink" href= "mailto:help@codefromscratch.org">help@codefromscratch.org</a>. We'll be happy to help with any suggestions, questions or even code related queries. We'll do our best to try to answer your questions as soon as possible.</p>
+					<div class = "exit" onclick="remove()">
+						<div class = "borderOfExit">
+							<img alt = "exit_icon" height = "25" width = "25" src="../media/exit_icon.png">
+						</div>
+					</div>
+					
+				</div>
+
+				<div class = "leftContainer" style = "height: 115%;">
+					<div class = "presentationDescription">
+						<p class = "courseTitle" style = "font-size: 27px;margin-top:13px;width: 230px;transform: translate(-115px);left: 50%;">Building Our First iPhone App Pt.2</p>
+						<ul class = "circleToRepresentLessons" style = "margin-left:15px;margin-top:12px;">
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+
+						</ul>
+					</div>
+						<a class = "link" href="data-collections.html">
+					<div class = "presentation">
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Data Collections</p>
+					</div>
+					</a>
+					<a class = "link" href = "building-our-location-model.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation" style = "margin-top:18px;">Building Our Location Model</p>
+					</div>
+					</a>
+					<a class = "link" href = "bringing-it-all-together.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Bringing It All Together</p>
+					</div>
+					</a>
+					<a class = "link" href = "intro-to-auto-layout.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Introduction to Auto Layout</p>
+					</div>
+					</a>
+					<a class = "link" href = "finishing-off-our-constraints.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation" style = "margin-top:18px;">Finishing Off Our Constraints</p>
+					</div>
+					</a>
+					<a class = "link" href = "improving-the-user-interface.html">
+					<div class = "presentationCurrent">
+						<div class = "lineTop"></div>
+						<div class = "circle"></div>
+						<p class = "selectedTextForPresentation" style = "margin-top:18px;">Improving the User Interface</p>
+					</div>
+					</a>
+					<div class = "mobile-separator"></div>
+					<a href = "../comingsoon.html">
+					<p class = "nextCourse">Next > <i>Coming Soon</i></p>
+					</a>
+				</div>
+				<div class = "separatorForVideos" style = "height: 115%;"></div>
+				<div class = "videoPlayerContainer" style = "height: 115%;">
+					<iframe class = "video" src="https://www.youtube.com/embed/HxKmmr4RPEY?rel=0&autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<div class = "videoDescription">
+						<h1 class = "videoTitle">Improving the User Interface</h1>
+
+						<p class = "description descriptionOfVideo">Congratulations on coming this far! In this final video of our course, we improve the user interface of the app to make it more asthetically pleasing and less robotic and empty.</p>
+						
+						<ul>
+							<li><p class = "description"><a class = "borderLink" href = "../media/WhereToGoNext.zip">Final WhereToGoNext Xcode Project</a></p></li>
+
+						</ul>
+
+					</div>
+				</div>
+
+		</body>
+	</html>

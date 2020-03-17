@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+
+			<script src = "javascript.js"></script>			
+			
+			<title>Curriculum</title>
+
+		</head>
+
+
+		<body style = "overflow-x: scroll;">
+			
+			
+
+			<div class = "nav" id = "topicsNav">
+					<nav>
+						<div class = "dropdown">
+							<a class = "left_logo" onclick="dropdown(dropOn)">Topics <span class = "arrow-down"></span></a>
+								<div class = "topicsHoverReveal">
+									<ul class = "topicsUnorderedList">
+										<li><a class = "navDrop" href = "swift-basics/an-introduction.html">Unit 1 - Swift Basics</a></li>
+										<li><a class = "navDrop" href = "types-and-operators/introduction-to-types.html">Unit 2 - Types & Operators</a></li>
+										<li><a class = "navDrop" href = "collections-and-control-flow/arrays.html">Unit 3 - Collections & Control Flow</a>
+										<li><a class = "navDrop" href = "functions/intro-to-functions.html">Unit 4 - Functions</a></li>
+										<li><a class = "navDrop" href = "object-oriented-programming/intro-to-structs.html">Unit 5 - Object Oriented Programming</a></li>
+										<li><a class = "navDrop" href = "building-our-first-iphone-app/intro-to-the-project.html">Unit 6 - Building Our First iPhone App</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class = "hambuger-icon-dropdown">
+							<a class = "hamburger-icon" onclick = "showHamburger()"></a>
+							<a class = "hamburger-icon-exit" onclick = "showHamburger()"></a>
+							<div class = "hamburger-menu">
+								<ul>
+									<li class = "hamburger-drop"><a href = "index.html">Home</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "topics.html">Curriculum</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "swift-basics/an-introduction.html">Start Now</a><div class = "hamburger-divier"></div></li>
+						
+									<li class = "hamburger-drop"><a href = "mission.html">Mission</a></li>
+								</ul>
+							</div>
+						</div>
+						<a class = "top_logo" href = "index.html"></a>
+						<a class = "right_logo" onclick= "showContactsPage()">Contact us</a>
+						
+							
+						
+						<div class = "separator"></div>
+					</nav>
+				</div>
+			
+			<div class = "overlay" style = "height: 100%;"></div>
+
+				<div class = "contactsPage">
+					<h1 class = "borderTitle">Need some help?</h1>
+					<p class = "borderDescription">If you're ever in doubt or need some help, shoot us a question at <a class = "borderLink" href= "mailto:help@codefromscratch.org">help@codefromscratch.org</a>. We'll be happy to help with any suggestions, questions or even code related queries. We'll do our best to try to answer your questions as soon as possible.</p>
+					<div class = "exit" onclick="remove()">
+						<div class = "borderOfExit">
+							<img alt = "exit_icon" height = "25" width = "25" src="media/exit_icon.png">
+						</div>
+					</div>
+					
+				</div>
+			
+			<img alt = "topicsBack" src="media/nightSky.jpg" class = "topicsBack">
+			<h1 class = "topicsHead">Our Journey</h1>
+			<div class = "journey">
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title1">Swift Basics</h1>
+					<a href="swift-basics/an-introduction.html">
+					<div class = "circleJourney" id = "circleJ1"></div>
+					</a>
+					<div class = "lineAfter" id = "lineA1"></div>
+					<div class = "journeyDescription" id = "jd1"><p class = "journeyText">Welcome to the world of iOS development! Here, we're going to covers all of the basics of the Swift language. We take a look at what we use to develop apps as well as both variables and constants and how we use them to store data.
+					<br><br>Time: 30 minutes<br><br>Level: Beginner</div>
+				</div>
+				
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title2">Types and Operators</h1>
+					<div class = "lineBefore" id = "lineB2"></div>
+					<a href = "types-and-operators/introduction-to-types.html">
+					<div class = "circleJourney" id = "circleJ2"></div>
+					</a>
+					<div class = "lineAfter" id = "lineA2"></div>
+					<div class = "journeyDescription" id = "jd2">
+						<p class = "journeyText">In this course, we're going to learn about the concepts of types, type safety and the importance of security (with types) in our apps. Finally, we take a look at operators and refresh our memories with a bit of basic mathematics.
+						<br><br>Time: 45 minutes<br><br>Level: Beginner
+					</div>
+				</div>
+				
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title3">Collections and Control Flow</h1>
+					<div class = "lineBefore" id = "lineB3"></div>
+					<a href = "collections-and-control-flow/arrays.html">
+						<div class = "circleJourney" id = "circleJ3"></div>
+					</a>
+					<div class = "lineAfter" id = "lineA3"></div>
+					<div class = "journeyDescription" id = "jd3">
+						<p class = "journeyText">Data can be stored in different ways, one of which are collections. Here, we'll learn about arrays, dictionaries, and how we can use them. After that, we'll look at how we can use control flow to run a block of code a set number of times.
+					<br><br>Time: 2 hours<br><br>Level: Beginner
+					</div>
+				</div>
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title4">Functions</h1>
+					<div class = "lineBefore" id = "lineB4"></div>
+					<div class = "circleJourney" id = "circleJ4"></div>
+					<div class = "lineAfter" id = "lineA4"></div>
+					<div class = "journeyDescription" id = "jd4">
+						<p class = "journeyText">Functions are a fundamental building block of any computer that allow us to write chunks of resuable code. After a bit of practice with building our own functions, we'll look at multiple return types, customizing argument labels, and function scope
+					<br><br>Time: 1 hour<br><br>Level: Beginner
+					</div>
+				</div>
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title5">Object Oriented Programming</h1>
+					<div class = "lineBefore" id = "lineB5"></div>
+					<div class = "circleJourney" id = "circleJ5"></div>
+					<div class = "lineAfter" id = "lineA5"></div>
+					<div class = "journeyDescription" id = "jd5">
+						<p class = "journeyText">Swift allows us to declare custom data types that are much more complex than the primitive data types we know about. We're going to learn about structs, classes and their differences. After that, we'll cover some trickier concepts like inheritance.
+					<br><br>Time: 2 hours<br><br>Level: Beginner
+					</div>
+				</div>
+				<div class = "journeyPresentation">
+					<h1 class = "journeyTitle" id = "title6">Building Our First iPhone App</h1>
+					<div class = "lineBefore" id = "lineB6"></div>
+					<div class = "circleJourney" id = "circleJ6"></div>
+					<div class = "journeyDescription" id = "jd6">
+						<p class = "journeyText">Time to put our skills to practice! Here, we'll take a look at some basic concepts like views, view controllers and auto-layout. We'll use these skills to build a travel app that shows random locations and facts with the click of a button.
+					<br><br>Time: 2.5 hours<br><br>Level: Beginner
+					</div>
+				</div>
+			</div>
+
+
+			<p class = "hoverInfo">Hover over the circles for more info!</p>
+
+
+
+
+
+
+		</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+			
+			<script src = "javascript.js"></script>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">  
+		<title>Home</title>
+
+		</head>
+
+		<body>
+			
+			<div class = "firstSection">
+				<div class="fullscreen-bg">
+					<img alt = "background" src = "media/background.jpg" class = "backgroundFull">
+				</div>
+
+				<div class = "nav">
+					<nav>
+						<div class = "dropdown">
+							<a class = "left_logo" onclick="dropdown(dropOn)">Topics <span class = "arrow-down"></span></a>
+								<div class = "topicsHoverReveal">
+									<ul class = "topicsUnorderedList">
+										<li><a class = "navDrop" href = "swift-basics/an-introduction.html">Unit 1 - Swift Basics</a></li>
+										<li><a class = "navDrop" href = "types-and-operators/introduction-to-types.html">Unit 2 - Types & Operators</a></li>
+										<li><a class = "navDrop" href = "collections-and-control-flow/arrays.html">Unit 3 - Collections & Control Flow</a>
+										<li><a class = "navDrop" href = "functions/intro-to-functions.html">Unit 4 - Functions</a></li>
+										<li><a class = "navDrop" href = "object-oriented-programming/intro-to-structs.html">Unit 5 - Object Oriented Programming</a></li>
+										<li><a class = "navDrop" href = "building-our-first-iphone-app/intro-to-the-project.html">Unit 6 - Building Our First iPhone App</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class = "hambuger-icon-dropdown">
+							<a class = "hamburger-icon" onclick = "showHamburger()"></a>
+							<a class = "hamburger-icon-exit" onclick = "showHamburger()"></a>
+							<div class = "hamburger-menu">
+								<ul>
+									<li class = "hamburger-drop"><a href = "index.html">Home</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "topics.html">Curriculum</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "swift-basics/an-introduction.html">Start Now</a><div class = "hamburger-divier"></div></li>
+						
+									<li class = "hamburger-drop"><a href = "mission.html">Mission</a></li>
+								</ul>
+							</div>
+						</div>
+						<a class = "top_logo" href = "index.html"></a>
+						<a class = "right_logo" onclick= "showContactsPage()">Contact us</a>
+						
+							
+						
+						<div class = "separator"></div>
+					</nav>
+				</div>
+			
+				<div class = "overlay"></div>
+
+				<div class = "contactsPage">
+					<h1 class = "borderTitle">Need some help?</h1>
+					<p class = "borderDescription">If you're ever in doubt or need some help, shoot us a question at <a class = "borderLink" href= "mailto:help@codefromscratch.org">help@codefromscratch.org</a>. We'll be happy to help with any suggestions, questions or even code related queries. We'll do our best to try to answer your questions as soon as possible.</p>
+					<div class = "exit" onclick="remove()">
+						<div class = "borderOfExit">
+							<img alt = "exit_icon" height = "25" width = "25" src="media/exit_icon.png">
+						</div>
+					</div>
+					
+				</div>
+				<div class = "centeredSection">
+					<h1 class = "title">Learn to code and build iOS apps for free</h1>
+					<p class = "subtitle">Learn to code. Change the world</p>
+					<img alt = "image" class = "image" src="media/background_print.png">
+					<a class = "missionButton" href="mission.html" >Our Mission</a>
+					<a class = "curriculumButton" href="topics.html">The Curriculum</a>
+					<a class = "startNowButton" href="swift-basics/an-introduction.html">Start Now</a>
+				</div>
+			
+				<span class = "arrow" onclick = "automaticallyScroll()"></span>
+				<span class = "semi-circle" onclick = "automaticallyScroll()"></span>
+			</div>
+			
+			<div class = "founderMessage">
+				<p class = "founderTitle" >//A Message From Our Founder</p>
+				<div class = "wrapperText">
+					<p class = "founderMessageDescription" style = "font-family: Menlo;"><span class = "swiftConstant">let</span> message = <span class = "swiftString">"Hi, my name is Amir Girgis, founder of CodeFromScratch. I am 17 years old and I started this initative with the sole aim of free education of coding and 21st century skills. I believe that equipping people with the skills to code leads to revolutionary inventions, from diagnosing cancer with algroithmic processing, to even something as simple as a fun game. At the heart of every breakthrough, every invention, every contribution to mankind, is some code, and when we can teach these skills to everyone worldwide, not only will we have a generation of problem solvers, but also a generation who can contribute positively to their community and to the rest of the world. So just remember: Learn to code. Change the world."</span></p>
+				</div>
+				<div class = "wrapperFounderTwo">
+					<p><span class = "swiftConstant">let</span> howWillILearn = <span class = "swiftCallFunction">scrollBelowToFindOut</span>(amIReady: <span class = "swiftConstant">true</span>)</p>
+				</div>
+			</div>
+
+			<div class = "secondSection">
+				<h1 class = "secondSectionTitle">Clear, consice, and well explained videos that cover all the details you need to know.</h1>
+				<img alt = "videoBack" src="media/videoBack.png" class = "videoBack">
+			</div>
+			
+			<div class = "thirdSection">
+
+				<h1 class = "thirdSectionTitle" >Learn by doing</h1>
+				<p class = "thirdSectionDescription">Gain experience and knowledge by building real world apps.</p>
+				<!--
+				<video loop muted autoplay class="fullscreen_video">
+       				<source src="media/tempVideo.mp4" type="video/mp4">
+				</video> -->
+				<img alt = "thirdSectionBack" src="media/thirdSectionBack.png" class = "thirdSectionBack">
+				<img alt = "thirdSectionBackTwo" src="media/secondBackVersionTwo.png" class = "thirdSectionBackTwo">
+				<div class = "thirdSectionOverlay "></div>
+				<div class = "thirdSectionBackgroundOverlay"></div>
+			</div>
+			
+			<div class = "fourthSection">
+				<div class = "fourthContainer">
+					<h1 class = "fourthSectionTitle" >It's for free and for everyone</h1>
+					<p class = "fourthDescription" >No subscriptions, no ads, no temporary free trials. We believe in universal and free access to 21st century skills, and that starts with learning to build your own apps.</p>
+					<a class = "startNowButtonTwo" href="swift-basics/an-introduction.html">Start Now</a>
+				</div>
+			</div>
+			
+
+
+
+
+		</body>
+	</html>

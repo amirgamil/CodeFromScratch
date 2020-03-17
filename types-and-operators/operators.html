@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+			
+			<title>Operators</title>
+				
+			<script src = "../javascript.js"></script>
+		</head>
+
+
+		<body>
+			<div class = "nav">
+					<nav>
+						<div class = "dropdown">
+							<a class = "left_logo" onclick="dropdown(dropOn)">Topics <span class = "arrow-down"></span></a>
+								<div class = "topicsHoverReveal">
+									<ul class = "topicsUnorderedList">
+										<li><a class = "navDrop" href = "../swift-basics/an-introduction.html">Unit 1 - Swift Basics</a></li>
+										<li><a class = "navDrop" href = "introduction-to-types.html">Unit 2 - Types & Operators</a></li>
+										<li><a class = "navDrop" href = "../collections-and-control-flow/arrays.html">Unit 3 - Collections & Control Flow</a></li>
+										<li><a class = "navDrop" href = "../functions/intro-to-functions.html">Unit 4 - Functions</a></li>
+										<li><a class = "navDrop" href = "../object-oriented-programming/intro-to-structs.html">Unit 5 - Object Oriented Programming</a></li>
+										<li><a class = "navDrop" href = "../building-our-first-iphone-app/intro-to-the-project.html">Unit 6 - Building Our First iPhone App</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class = "hambuger-icon-dropdown">
+							<a class = "hamburger-icon" onclick = "showHamburger()"></a>
+							<a class = "hamburger-icon-exit" onclick = "showHamburger()"></a>
+							<div class = "hamburger-menu">
+								<ul>
+									<li class = "hamburger-drop"><a href = "../index.html">Home</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "../topics.html">Curriculum</a><div class = "hamburger-divier"></div></li>
+									
+									<li class = "hamburger-drop"><a href = "../swift-basics/an-introduction.html">Start Now</a><div class = "hamburger-divier"></div></li>
+						
+									<li class = "hamburger-drop"><a href = "../mission.html">Mission</a></li>
+								</ul>
+							</div>
+						</div>
+						<a class = "top_logo" href = "../index.html"></a>
+						<a class = "right_logo">Contact us</a>
+						<div class = "separator"></div>
+					</nav>
+				</div>
+			
+				<div class = "overlay" style = "height: 100%;position:fixed;"></div>
+
+				<div class = "contactsPage">
+					<h1 class = "borderTitle">Need some help?</h1>
+					<p class = "borderDescription">If you're ever in doubt or need some help, shoot us a question at <a class = "borderLink" href= "mailto:help@codefromscratch.org">help@codefromscratch.org</a>. We'll be happy to help with any suggestions, questions or even code related queries. We'll do our best to try to answer your questions as soon as possible.</p>
+					<div class = "exit" onclick="remove()">
+						<div class = "borderOfExit">
+							<img alt = "exit_icon" height = "25" width = "25" src="../media/exit_icon.png">
+						</div>
+					</div>
+					
+				</div>
+
+				<div class = "leftContainer" style = "height:100%;">
+					<div class = "presentationDescription">
+						<p class = "courseTitle" style = "font-size: 27px;">Types & Operators</p>
+						<!-- Fix this DRY -->
+						<ul class = "circleToRepresentLessons" style = "margin-left:40px;">
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+							<li class = "circleToRepresentLessonsDone"></li>
+						</ul>
+					</div>
+					<a class = "link" href="introduction-to-types.html">
+					<div class = "presentation">
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Introduction to Types</p>
+					</div>
+					</a>
+					<a class = "link" href = "strings.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Strings</p>
+					</div>
+					</a>
+					<a class = "link" href = "numbers-and-booleans.html">
+					<div class = "presentation">
+						<div class = "lineTop"></div>
+						<div class = "lineBottom"></div>
+						<div class = "circle"></div>
+						<p class = "textForPresentation">Numbers and Booleans</p>
+					</div>
+					</a>
+					<a class = "link" href = "operators.html">
+					<div class = "presentationCurrent">
+						<div class = "lineTop"></div>
+						<div class = "circle"></div>
+						<p class = "selectedTextForPresentation">Operators</p>
+					</div>
+					</a>
+					<div class = "mobile-separator"></div>
+					<a href = "../collections-and-control-flow/arrays.html">
+					<p class = "nextCourse">Next > Collections and Control Flow</p>
+					</a>
+				</div>
+				<div class = "separatorForVideos" style = "height:100%;"></div>
+				<div class = "videoPlayerContainer two" style = "height:100%;overflow-y:scroll;">
+					<iframe class = "video" src="https://www.youtube.com/embed/PSCcxmitR_4?rel=0&autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<div class = "videoDescription">
+						<h1 class = "videoTitle">Operators</h1>
+
+						<p class = "description descriptionOfVideo">Storing data is great, but whats the point if we can't manipulate them? In this video, we'll take a look at operators and all of the different ways we can manipulate both numerical and string data.</p>
+
+						<p class = "links description">Links</p>
+						<ul>
+							<li><p class = "description"><a class = "borderLink" href = "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60">Basic Operators</a></p></li>
+
+							<li><p class = "description"><a class = "borderLink" href = "../media/final-types-and-operators.zip">Final Types & Operators Playground Project</a></p></li>
+
+						</ul>
+
+					</div>
+				</div>
+
+		</body>
+	</html>
